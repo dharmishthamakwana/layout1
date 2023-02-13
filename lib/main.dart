@@ -6,7 +6,7 @@ void main()
     MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: {
-        '/':(context) => Screen1(),
+        '/':(context) => one(),
 
       },
     ),
