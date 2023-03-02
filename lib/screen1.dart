@@ -45,15 +45,9 @@ class _oneState extends State<one> {
               Column(
                 children: [
                   //
-                  // storage , percentage,
+                  
                   Row(
-                    children: [
-                      // Container(
-                      //   height: 60,
-                      //   width: 60,
-                      //   child: Image.asset("assets/img/per.png",
-                      //       fit: BoxFit.cover),
-                      // ),
+                    
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
