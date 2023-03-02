@@ -41,13 +41,13 @@ class _oneState extends State<one> {
           child: Stack(
             alignment: Alignment.bottomRight,
             children: [
-              SingleChildScrollView(scrollDirection: Axis.vertical,),
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+              ),
               Column(
                 children: [
-                  //
-                  
                   Row(
-                    
+                    children: [
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Container(
@@ -59,13 +59,16 @@ class _oneState extends State<one> {
                             border: Border.all(color: Colors.yellow, width: 2),
                           ),
                           child: Text("99%",
-                              style: TextStyle(color: Colors.yellow, fontSize: 11)),
+                              style:
+                                  TextStyle(color: Colors.yellow, fontSize: 11)),
                         ),
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SingleChildScrollView(scrollDirection: Axis.vertical,),
+                          SingleChildScrollView(
+                            scrollDirection: Axis.vertical,
+                          ),
                           Text("Storage",
                               style: TextStyle(fontSize: 13, color: Colors.grey)),
                           SizedBox(
@@ -76,11 +79,12 @@ class _oneState extends State<one> {
                               Text(
                                 "118.47GB",
                                 style:
-                                TextStyle(color: Colors.yellow, fontSize: 10),
+                                    TextStyle(color: Colors.yellow, fontSize: 10),
                               ),
                               Text(
                                 " / 118.86GB",
-                                style: TextStyle(color: Colors.grey, fontSize: 10),
+                                style:
+                                    TextStyle(color: Colors.grey, fontSize: 10),
                               ),
                             ],
                           ),
@@ -88,8 +92,8 @@ class _oneState extends State<one> {
                       ),
                       Expanded(
                           child: SizedBox(
-                            width: 100,
-                          )),
+                        width: 100,
+                      )),
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: Icon(
@@ -108,7 +112,9 @@ class _oneState extends State<one> {
                     padding: const EdgeInsets.all(8.0),
                     child: Row(
                       children: [
-                        SingleChildScrollView(scrollDirection: Axis.vertical,),
+                        SingleChildScrollView(
+                          scrollDirection: Axis.vertical,
+                        ),
                         SizedBox(
                           width: 10,
                           height: 20,
@@ -119,9 +125,10 @@ class _oneState extends State<one> {
                         Icon(Icons.navigate_next,
                             color: Colors.grey.shade400, size: 15),
                         Expanded(
-                            child: SizedBox(
-                              width: 100,
-                            )),
+                          child: SizedBox(
+                            width: 100,
+                          ),
+                        ),
                         Icon(
                           Icons.menu_open,
                           size: 20,
@@ -147,87 +154,64 @@ class _oneState extends State<one> {
                   ),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
-
                     child: Column(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              fmLogo("Android"),
-                              fmLogo("Biodata"),
-                              fmLogo("browser"),
-                              fmLogo("com.activision"),
-                              fmLogo("com.facebook.orca"),
-                            ],
-                          ),
+                        Row(
+                          // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            fmLogo("Android"),
+                            fmLogo("Biodata"),
+                            fmLogo("browser"),
+                            fmLogo("com.activision"),
+                            fmLogo("com.facebook.orca"),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(1),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              fmLogo("creative-biodatamaker"),
-                              fmLogo("DCIM"),
-                              fmLogo("Dcoder"),
-                              fmLogo("Download"),
-                              fmLogo("Dragon ball Z"),
-                            ],
-                          ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            fmLogo("creative-biodatamaker"),
+                            fmLogo("DCIM"),
+                            fmLogo("Dcoder"),
+                            fmLogo("Download"),
+                            fmLogo("Dragon ball Z"),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              fmLogo("Lost in space"),
-                              fmLogo("Lost in space"),
-                              fmLogo("MEGA"),
-                              fmLogo("MidasOversea"),
-                              fmLogo("MIUI"),
-
-                            ],
-                          ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            fmLogo("Lost in space"),
+                            fmLogo("Lost in space"),
+                            fmLogo("MEGA"),
+                            fmLogo("MidasOversea"),
+                            fmLogo("MIUI"),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              fmLogo("Lost in space"),
-                              fmLogo("Lost in space"),
-                              fmLogo("MEGA"),
-                              fmLogo("MidasOversea"),
-                              fmLogo("MidasOversea"),
-
-                            ],
-                          ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            fmLogo("Lost in space"),
+                            fmLogo("Lost in space"),
+                            fmLogo("MEGA"),
+                            fmLogo("MidasOversea"),
+                            fmLogo("MidasOversea"),
+                          ],
                         ),
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                            children: [
-                              fmLogo("Lost in space"),
-                              fmLogo("Lost in space"),
-                              fmLogo("MEGA"),
-                              fmLogo("MidasOversea"),
-                              fmLogo("MidasOversea"),
-
-                            ],
-                          ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            fmLogo("Lost in space"),
+                            fmLogo("Lost in space"),
+                            fmLogo("MEGA"),
+                            fmLogo("MidasOversea"),
+                            fmLogo("MidasOversea"),
+                          ],
                         ),
-
                       ],
                     ),
                   ),
                 ],
               ),
-
-
             ],
-
           ),
         ),
         backgroundColor: Color(0xff202020),
